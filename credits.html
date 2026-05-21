@@ -2,37 +2,22 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 <style>
 a.link-button, a.link-button:hover, a.link-button:focus {
     text-decoration: none;
     color: inherit;
 }
-
-.box {
-    font-family: 'Times New Roman', serif;
-    background-color: #c0c0c0;
-    border-style: outset;
-    border-color: white black black white;
-    padding-right: 1px;
+.credits {
     width:500px;
-    margin:10px;
+
 }
 @media screen and (max-width: 600px) {
-  .box {
+  .credits {
     width: 84%;
   }
 }
-.bar {
-    display: flex;
-    font-family: 'Calibri', sans-serif;
-    color: white;
-    background-color: #0000a8;
-    padding: 1px;
-}
-.box-content {
-    padding: 2px;
-    height: 180px;
-}
+
 .flex-content-col {
     display: flex;
     flex-direction: column;
@@ -41,6 +26,7 @@ a.link-button, a.link-button:hover, a.link-button:focus {
     border-color: black white white black;
     border-style: inset;
     height: calc(100% - 5px);
+    margin: 2px;
 }
 .flex-content-row {
     display: flex;
@@ -50,7 +36,6 @@ a.link-button, a.link-button:hover, a.link-button:focus {
 .textbox {
     font-family: 'Consolas', sans-serif;
     font-weight: bold;
-    border-color: eeeeee;
     flex-grow: 1;
 }
 .scroll-col {
@@ -63,54 +48,12 @@ a.link-button, a.link-button:hover, a.link-button:focus {
     display: flex;
     background-color: #e0e3e4;
 }
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-.button {
-    font-family: 'Calibri', sans-serif;
+.scroll-button {
     font-size:10px;
     color: #87888f;
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-    text-align: center;
-    padding:0px;
-    margin:1px;
-    width:17px;
-}
-.button:active {
-    border-style: inset;
-    border-color: black white white black;
-}
-
-.footer {
-    position: fixed;
-    font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
-    border-style: outset outset none none;
-    border-color: white black black white;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-}
-.footer-button {
-    font-family: 'Calibri', sans-serif;
-    background-color: #dee2e3;
-    border-style: inset;
-    border-color: black white white black;
-    padding: 1px;
-    margin: 2px;
-}
-.footer-time {
-    font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
-    border-style: inset;
-    border-color: #eeeeee;
-    padding: 1px;
-    margin: 2px;
-    text-align: center;
+    padding: 0px;
+    margin: 1px;
+    width: 17px;
 }
 
 .mini-icon {
@@ -121,24 +64,13 @@ a.link-button, a.link-button:hover, a.link-button:focus {
 }
 </style>
 <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-ShowTime();
-});
-function ShowTime() {
-var dt = new Date();
-document.getElementById("lblTime").innerHTML = dt.toLocaleTimeString([], { hour: 'numeric', hour12: true, minute: 'numeric' });
-window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec
-}
-</script>
+<script type="text/javascript" src="scripts/clock.js"></script>
 </head>
-<body style="background-color:#008080ff; margin:0">
-<form id="form1" runat="server">
+<body>
 
-<div class="box">
-<div class="bar"><img class="mini-icon" src="images/scroll.png">credits.txt - Notepad<div style="flex-grow:1"></div><a class="link-button" style="    margin-right:2px;" href="empty.html"><div class="button" style="color:black"><b>✖</b></div></a> </div>
+<div class="box credits">
+<div class="bar"><img class="mini-icon" src="images/scroll.png">credits.txt - Notepad<div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="empty.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
-<div class="box-content">
 <div class="flex-content-col">
 <div class="flex-content-row">
 
@@ -149,16 +81,17 @@ This website was made by <a href="https://github.com/festivval">Erica Wang</a> f
 <br>
 <br>
 Inspired by the Windows NT 4.0 OS.</div>
+<br>
+<br>
 </div> <!-- end textbox -->
 
-<div class="scroll-col"><div class="button">▲</div><div class="button">▼</div></div>
+<div class="scroll-col"><div class="button scroll-button">▲</div><div class="button scroll-button">▼</div></div>
 
 </div> <!-- end flex-content-row -->
 
-<div class="scroll-row"><div class="button">◀</div><div style="flex-grow:1"></div><div class="button">▶</div><div style="width:21px; background-color:#c0c7c8; color:#87888f; text-align:right">///</div></div>
+<div class="scroll-row"><div class="button scroll-button">◀</div><div style="flex-grow:1"></div><div class="button scroll-button">▶</div><div style="width:21px; background-color:#c0c7c8; color:#87888f; text-align:right">///</div></div>
 
 </div> <!-- end flex-content-col -->
-</div> <!-- end box-content -->
 </div> <!-- end box -->
 
 

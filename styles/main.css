@@ -1,0 +1,109 @@
+body {
+    background-color:#008080ff;
+    margin:0;
+}
+
+.box {
+    font-family: 'Times New Roman', serif;
+    background-color: #c0c0c0;
+    border-style: outset;
+    border-color: white black black white;
+    padding-right: 1px;
+    margin: 10px;
+}
+.box-content {
+    padding: 15px;
+}
+.bar {
+    display: flex;
+    font-family: 'Calibri', sans-serif;
+    color: white;
+    background-color: #0000a8;
+    padding: 1px;
+}
+.bar-bg {
+    color: #c0c0c0;
+    background-color: #87888f;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.button {
+    font-family: 'Calibri', sans-serif;
+    color: black;
+    background-color: #c0c0c0ff;
+    border-style: outset;
+    border-color: white black black white;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+.x-button {
+    font-size: 10px;
+    width: 17px;
+    padding: 0px;
+    margin: 1px;
+}
+.button:active {
+    border-style: inset;
+    border-color: black white white black;
+}
+.select:active {
+    border-style: solid;
+    border-color: black;
+}
+.selected {
+    border-color: black;
+}
+.select-inner {
+    border-style: none;
+    border-radius: 2.5px;
+    position: absolute;
+    top: 2.5px;
+    bottom: 2.5px;
+    left: 2.5px;
+    right: 2.5px;
+}
+.select:active > .select-inner {
+    border-style: dotted;
+}
+.selected-inner {
+    border-style: dotted;
+    border-radius: 2.5px;
+    position: absolute;
+    top: 2.5px;
+    bottom: 2.5px;
+    left: 2.5px;
+    right: 2.5px;
+}
+
+.footer {
+    position: fixed;
+    font-family: 'Calibri', sans-serif;
+    background-color: #c0c0c0;
+    border-style: outset outset none none;
+    border-color: white black black white;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+}
+.footer-button {
+    font-family: 'Calibri', sans-serif;
+    background-color: #dee2e3;
+    border-style: inset;
+    border-color: black white white black;
+    padding: 1px;
+    margin: 2px;
+}
+.footer-time {
+    font-family: 'Calibri', sans-serif;
+    background-color: #c0c0c0;
+    border-style: inset;
+    border-color: #eeeeee;
+    padding: 1px;
+    margin: 2px;
+    text-align: center;
+}

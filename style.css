@@ -1,8 +1,0 @@
-a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
-    text-decoration: none;
-    color: inherit;
-}
-.page {
-    display: flex;
-    flex-wrap: wrap;
-}

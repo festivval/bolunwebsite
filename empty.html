@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/main.css">
 <style>
 a, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -37,49 +39,11 @@ a, a:hover, a:focus, a:active {
     background-color: #0000a8;
     outline: dotted white;
 }
-
-.footer {
-    position: fixed;
-    font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
-    border-style: outset outset none none;
-    border-color: white black black white;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-}
-.footer-button {
-    font-family: 'Calibri', sans-serif;
-    background-color: #dee2e3;
-    border-style: inset;
-    border-color: black white white black;
-    padding: 1px;
-    margin: 2px;
-}
-.footer-time {
-    font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
-    border-style: inset;
-    border-color: #eeeeee;
-    padding: 1px;
-    margin: 2px;
-    text-align: center;
-}
 </style>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-ShowTime();
-});
-function ShowTime() {
-var dt = new Date();
-document.getElementById("lblTime").innerHTML = dt.toLocaleTimeString([], { hour: 'numeric', hour12: true, minute: 'numeric' });
-window.setTimeout("ShowTime()", 1000); // Here 1000(milliseconds) means one 1 Sec
-}
-</script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
+<script type="text/javascript" src="scripts/clock.js"></script>
 </head>
-<body style="background-color:#008080ff; margin:0">
-<form id="form1" runat="server">
+<body>
 
 <div class="icons">
 <a href="index.html"><div class="icon"><img class="icon-img" src="images/bosniper.png"><img class="icon-img-hidden" src="images/bosniper-select.png"><div class="icon-txt">Bolun Thompson</div></div></a><br>
