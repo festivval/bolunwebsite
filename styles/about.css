@@ -1,20 +1,6 @@
 p {
     font-size: 18px;
 }
-ul {
-    position: relative;
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1.2em;
-}
-ul li {
-    padding: 5px 0px;
-}
-ul li:before {
-    content: "▣";
-    position: absolute;
-    left: 0;
-}
 
 .about {
     flex: 1;
@@ -27,14 +13,6 @@ ul li:before {
     border-color: black white white black;
     margin: 5px;
 }
-@media screen and (max-width: 864px) {
-  .about {
-      margin-bottom: 70px;
-  }
-  .about-box {
-      max-height: 100%;
-  }
-}
 .logo {
     display: flex;
     gap: 15px;
@@ -42,4 +20,13 @@ ul li:before {
 .logo-img {
     display: block;
     max-height: 50px;
+}
+
+@media screen and (max-width: 865px) {
+  .about {
+      margin-bottom: 70px;
+  }
+  .about-box {
+      max-height: 100%;
+  }
 }

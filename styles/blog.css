@@ -14,17 +14,17 @@
 }
 .window-box {
     position: absolute;
+    margin-right: 20px;
     z-index: 50;
 }
 .blogbox {
-    background-color: white;
+    background-color: #ffffd0;
     border-color: black white white black;
     border-style: inset;
-    padding: 2px;
+    padding: 0px;
     margin: 5px;
     overflow: auto;
     max-height: 70vh;
-    max-width: 20vw;
 }
 .icons {
     display: flex;
@@ -35,6 +35,9 @@
 }
 .icon {
     text-align: center;
+}
+.icon-select {
+    outline: dotted black;
 }
 .icon-img {
     width: 80px;
@@ -54,4 +57,13 @@
     background-color: #0000a8;
     color: white;
     outline: dotted black;
+}
+
+@media screen and (max-width: 865px) {
+  .file {
+      margin-bottom: 70px;
+  }
+  .filebox {
+      max-height: 100%;
+  }
 }

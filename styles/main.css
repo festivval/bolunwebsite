@@ -2,6 +2,20 @@ body {
     background-color:#008080ff;
     margin:0;
 }
+ul {
+    position: relative;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+ul li {
+    padding: 5px 0px;
+}
+ul li:before {
+    content: "▣";
+    position: absolute;
+    left: 0;
+}
 
 .page {
     display: flex;
@@ -24,6 +38,7 @@ body {
     color: white;
     background-color: #0000a8;
     padding: 1px;
+    overflow: hidden;
 }
 .bar-bg {
     color: #c0c0c0;
@@ -102,6 +117,24 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
     border-style: inset;
     border-color: #eeeeee;
 }
+.box-header {
+    display: flex;
+    font-family: 'Calibri', sans-serif;
+    border-style: none none solid none;
+    border-color: black;
+    background-color: #c0c0c0;
+}
+.box-ear {
+    display: flex;
+    border-style: none solid none none;
+    border-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.box-ear-bg {
+    color: #95979d;
+}
 .box-footer {
     display: flex;
     font-family: 'Calibri', sans-serif;
@@ -114,6 +147,7 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
     flex-grow: 1;
     border-style: inset;
     border-color: white;
+    overflow: hidden;
 }
 .footer {
     position: fixed;

@@ -1,10 +1,5 @@
 .welcome {
-    width:500px;
-}
-@media screen and (max-width: 600px) {
-  .welcome {
-    width: 84%;
-  }
+    width: 500px;
 }
 .flex-content {
     display: flex;
@@ -27,4 +22,10 @@
 .picture-headshot:hover {
     background-image: url("../images/headshot2.jpg");
     transition-delay: 3s;
+}
+
+@media screen and (max-width: 865px) {
+  .welcome {
+    width: 84vw;
+  }
 }

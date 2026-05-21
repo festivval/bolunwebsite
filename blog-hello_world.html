@@ -10,6 +10,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
     <script type="text/javascript" src="scripts/clock.js"></script>
     <script type="text/javascript" src="scripts/keybind.js"></script>
+    <script type="text/javascript">
+        $(document).on('keydown', function (event) {
+        if (event.which == 78) {
+            window.location.href = "blog-kvm_sectorlisp.html";
+        }
+        });
+    </script>
 </head>
 <body>
 
@@ -27,9 +34,9 @@
 <div class="picture picture-headshot"></div>
 
 <div class="buttons" style="width:100px">
-<a class="link-button" href="about.html"><div class="button select"><div class="select-inner"></div>About</div></a>
-<a class="link-button" href="blog.html"><div class="button select selected"><div class="select-inner selected-inner"></div>Blog</div></a>
-<div class="button select"><div class="select-inner"></div>Work</div>
+<a class="link-button" href="about.html"><div class="button select"><div class="select-inner"></div><u>A</u>bout</div></a>
+<a class="link-button" href="blog.html"><div class="button select"><div class="select-inner"></div><u>B</u>log</div></a>
+<div class="button select"><div class="select-inner"></div><u>W</u>ork</div>
 <div style="flex-grow:1"></div>
 <div class="socials">
 <a class="link-button" href="https://github.com/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img style="height:100%"; src="images/github.svg"></div></a>
@@ -53,7 +60,8 @@
 <div class="bar"><img class="mini-icon" src="images/paper.png"><div class="mini-title">Hello, world!</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="blog.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 <div class="blogbox scrollbox">
-<div style="padding:2px">
+<div class="box-header"><a class="link-button" href="blog-kvm_sectorlisp.html"><div class="box-ear"><u>N</u>ext</div></a><div class="box-ear box-ear-bg"><u>P</u>rev.</div><div style="flex-grow:1"></div></div>
+<div style="padding:4px">
 
 Hello, world! This is my first post.
 
@@ -72,7 +80,7 @@ Hello, world! This is my first post.
 
 <a class="link-button" href="blog-kvm_sectorlisp.html"><div class="icon"><img class="icon-img" src="images/paper.png"><img class="icon-img-hidden" src="images/paper-select.png"><div class="icon-txt">KVM Sectorlisp</div></div></a><br>
 
-<a class="link-button" href="blog-hello_world.html"><div class="icon"><img class="icon-img" src="images/paper.png"><img class="icon-img-hidden" src="images/paper-select.png"><div class="icon-txt">Hello, world!</div></div></a><br>
+<a class="link-button" href="blog-hello_world.html"><div class="icon"><img class="icon-img" src="images/paper.png"><img class="icon-img-hidden" src="images/paper-select.png"><div class="icon-txt icon-select">Hello, world!</div></div></a><br>
 
 </div> <!-- end icons -->
 </div> <!-- end filebox -->

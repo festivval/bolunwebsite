@@ -1,11 +1,6 @@
 .credits {
     width:500px;
 }
-@media screen and (max-width: 600px) {
-  .credits {
-    width: 84%;
-  }
-}
 .flex-content-col {
     display: flex;
     flex-direction: column;
@@ -42,4 +37,10 @@
     padding: 0px;
     margin: 1px;
     width: 17px;
+}
+
+@media screen and (max-width: 865px) {
+  .credits {
+    width: 84%;
+  }
 }
