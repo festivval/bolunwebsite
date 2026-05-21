@@ -1,75 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/main.css">
-<style>
-a.link-button, a.link-button:hover, a.link-button:focus {
-    text-decoration: none;
-    color: inherit;
-}
-.credits {
-    width:500px;
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-}
-@media screen and (max-width: 600px) {
-  .credits {
-    width: 84%;
-  }
-}
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/credits.css">
 
-.flex-content-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    border-color: black white white black;
-    border-style: inset;
-    height: calc(100% - 5px);
-    margin: 2px;
-}
-.flex-content-row {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-}
-.textbox {
-    font-family: 'Consolas', sans-serif;
-    font-weight: bold;
-    flex-grow: 1;
-}
-.scroll-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #e0e3e4;
-}
-.scroll-row {
-    display: flex;
-    background-color: #e0e3e4;
-}
-.scroll-button {
-    font-size:10px;
-    color: #87888f;
-    padding: 0px;
-    margin: 1px;
-    width: 17px;
-}
-
-.mini-icon {
-    image-rendering: pixelated;
-    object-fit: cover;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-</style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
-<script type="text/javascript" src="scripts/clock.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
+    <script type="text/javascript" src="scripts/clock.js"></script>
 </head>
 <body>
 
 <div class="box credits">
-<div class="bar"><img class="mini-icon" src="images/scroll.png">credits.txt - Notepad<div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="empty.html"><div class="button x-button"><b>✖</b></div></a> </div>
+<div class="bar"><img class="mini-icon" src="images/scroll.png"><div class="mini-title">credits.txt - Notepad</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="empty.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 <div class="flex-content-col">
 <div class="flex-content-row">
@@ -92,11 +35,11 @@ Inspired by the Windows NT 4.0 OS.</div>
 <div class="scroll-row"><div class="button scroll-button">◀</div><div style="flex-grow:1"></div><div class="button scroll-button">▶</div><div style="width:21px; background-color:#c0c7c8; color:#87888f; text-align:right">///</div></div>
 
 </div> <!-- end flex-content-col -->
-</div> <!-- end box -->
+</div> <!-- end box credits -->
 
 
 <div class="footer">
-<div class="footer-button" style="width:150px"><img class="mini-icon" src="images/scroll.png"><b>credits.txt</b></div>
+<div class="footer-button" style="width:150px"><img class="mini-icon" src="images/scroll.png"><div class="mini-title"><b>credits.txt</b></div></div>
 <div style="flex-grow:1"></div>
 <div class="footer-time" style="width:70px"><label id="lblTime"></label></div>
 </div>

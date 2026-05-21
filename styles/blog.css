@@ -1,0 +1,57 @@
+.file {
+    flex: 1;
+}
+.filebox {
+    flex-grow: 1;
+    background-color: white;
+    border-color: black white white black;
+    border-style: inset;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 5px;
+    overflow: auto;
+    height: 70vh;
+}
+.window-box {
+    position: absolute;
+    z-index: 50;
+}
+.blogbox {
+    background-color: white;
+    border-color: black white white black;
+    border-style: inset;
+    padding: 2px;
+    margin: 5px;
+    overflow: auto;
+    max-height: 70vh;
+    max-width: 20vw;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-family: 'Calibri', sans-serif;
+    color: black;
+}
+.icon {
+    text-align: center;
+}
+.icon-img {
+    width: 80px;
+    image-rendering: pixelated;
+}
+.icon-img-hidden {
+    position: fixed;
+    width: 80px;
+    margin-left: -80px;
+    image-rendering: pixelated;
+    opacity: 0;
+}
+.icon:active > .icon-img-hidden {
+    opacity: 1;
+}
+.icon:active > .icon-txt {
+    background-color: #0000a8;
+    color: white;
+    outline: dotted black;
+}

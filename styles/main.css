@@ -3,6 +3,10 @@ body {
     margin:0;
 }
 
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
 .box {
     font-family: 'Times New Roman', serif;
     background-color: #c0c0c0;
@@ -25,7 +29,21 @@ body {
     color: #c0c0c0;
     background-color: #87888f;
 }
+.mini-icon {
+    position: absolute;
+    image-rendering: pixelated;
+    width: 20px;
+    padding: 1px;
+    margin-left: 3px;
+}
+.mini-title {
+    margin-left: 25px;
+}
 
+a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
+    text-decoration: none;
+    color: inherit;
+}
 .buttons {
     display: flex;
     flex-direction: column;
@@ -79,7 +97,24 @@ body {
     left: 2.5px;
     right: 2.5px;
 }
-
+.picture {
+    background-color: #ffffbc;
+    border-style: inset;
+    border-color: #eeeeee;
+}
+.box-footer {
+    display: flex;
+    font-family: 'Calibri', sans-serif;
+    background-color: #c0c0c0;
+    padding: 1px;
+    margin: 2px;
+}
+.box-toe {
+    display: flex;
+    flex-grow: 1;
+    border-style: inset;
+    border-color: white;
+}
 .footer {
     position: fixed;
     font-family: 'Calibri', sans-serif;
@@ -89,6 +124,7 @@ body {
     bottom: 0px;
     width: 100%;
     display: flex;
+    z-index: 100;
 }
 .footer-button {
     font-family: 'Calibri', sans-serif;
@@ -98,6 +134,11 @@ body {
     padding: 1px;
     margin: 2px;
 }
+.footer-bg {
+    background-color: #c0c0c0;
+    border-style: outset;
+    border-color: white black black white;
+}
 .footer-time {
     font-family: 'Calibri', sans-serif;
     background-color: #c0c0c0;
@@ -106,4 +147,66 @@ body {
     padding: 1px;
     margin: 2px;
     text-align: center;
+}
+
+.scrollbox::-webkit-scrollbar {
+    background-color: #e0e3e4;
+    width: 22px;
+}
+.scrollbox::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0ff;
+    border-style: outset;
+    border-color: white black black white;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:vertical:decrement {
+    background-image: url('../images/uparrow.png');
+    background-size: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #c0c0c0ff;
+    border-style: outset;
+    border-color: white black black white;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+    border-style: solid;
+    border-color: #9b9ea3;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:vertical:increment {
+    background-image: url('../images/downarrow.png');
+    background-size: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #c0c0c0ff;
+    border-style: outset;
+    border-color: white black black white;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:vertical:increment:active {
+    border-style: solid;
+    border-color: #9b9ea3;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:horizontal:decrement {
+    background-image: url('../images/leftarrow.png');
+    background-size: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #c0c0c0ff;
+    border-style: outset;
+    border-color: white black black white;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+    border-style: solid;
+    border-color: #9b9ea3;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:horizontal:increment {
+    background-image: url('../images/rightarrow.png');
+    background-size: 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #c0c0c0ff;
+    border-style: outset;
+    border-color: white black black white;
+}
+.scrollbox::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+    border-style: solid;
+    border-color: #9b9ea3;
 }

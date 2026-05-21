@@ -1,187 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/main.css">
-<style>
-a.link-button, a.link-button:hover, a.link-button:focus {
-    text-decoration: none;
-    color: inherit;
-}
-.page {
-    display: flex;
-    flex-wrap: wrap;
-}
-p { font-size: 18px; }
-ul {
-    position: relative;
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1.2em;
-}
-ul li {
-    padding: 5px 0px;
-}
-ul li:before {
-    content: "▣";
-    position: absolute;
-    left: 0;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.file {
-    flex: 1;
-}
-.scrollbox::-webkit-scrollbar {
-    background-color: #e0e3e4;
-    width: 22px;
-}
-.scrollbox::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-}
-.scrollbox::-webkit-scrollbar-button:single-button:vertical:decrement {
-    background-image: url('images/uparrow.png');
-    background-size: 8px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-}
-.scrollbox::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-    border-style: solid;
-    border-color: #9b9ea3;
-}
-.scrollbox::-webkit-scrollbar-button:single-button:vertical:increment {
-    background-image: url('images/downarrow.png');
-    background-size: 8px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-}
-.scrollbox::-webkit-scrollbar-button:single-button:vertical:increment:active {
-    border-style: solid;
-    border-color: #9b9ea3;
-}
-.welcome {
-    width:500px;
-}
-@media screen and (max-width: 864px) {
-  .welcome {
-      width: 500px;
-      max-width: 94vw;
-  }
-}
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/welcome.css">
+    <link rel="stylesheet" type="text/css" href="styles/blog.css">
 
-.flex-content {
-    display: flex;
-    justify-content: space-between;
-}
-.filebox {
-    flex-grow: 1;
-    background-color: white;
-    border-color: black white white black;
-    border-style: inset;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 5px;
-    overflow: auto;
-    height: 70vh;
-}
-.blogbox {
-    background-color: white;
-    border-color: black white white black;
-    border-style: inset;
-    padding: 2px;
-    margin: 5px;
-    overflow: auto;
-    max-height: 70vh;
-    max-width: 20vw;
-}
-.picture {
-    background-color: #ffffbc;
-    border-style: inset;
-    border-color: #eeeeee;
-}
-.picture-headshot {
-    background-image: url("images/headshot.jpg");
-    width: calc(100% - 115px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 0;
-    padding-top: 63.05%;
-}
-.picture-headshot:hover {
-    background-image: url("images/headshot2.jpg");
-    transition-delay:3s;
-}
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-.icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-family: 'Calibri', sans-serif;
-    color: black;
-}
-.icon {
-    text-align: center;
-}
-.icon-img {
-    width: 80px;
-    image-rendering: pixelated;
-}
-.icon-img-hidden {
-    position: fixed;
-    width: 80px;
-    margin-left: -80px;
-    image-rendering: pixelated;
-    opacity: 0;
-}
-.icon:active > .icon-img-hidden {
-    opacity: 1;
-}
-.icon:active > .icon-txt {
-    background-color: #0000a8;
-    color: white;
-    outline: dotted black;
-}
-.box-footer {
-    display: flex;
-    font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
-    padding: 1px;
-    margin: 2px;
-}
-.box-toe {
-    display: flex;
-    flex-grow: 1;
-    border-style: inset;
-    border-color: white;
-}
-
-.mini-icon {
-    image-rendering: pixelated;
-    object-fit: contain;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.window-box {
-    position: absolute;
-    z-index: 50;
-}
-</style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
-<script type="text/javascript" src="scripts/clock.js"></script>
-<script type="text/javascript" src="scripts/keybind.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
+    <script type="text/javascript" src="scripts/clock.js"></script>
+    <script type="text/javascript" src="scripts/keybind.js"></script>
 </head>
 <body>
 
@@ -215,14 +43,14 @@ ul li:before {
 </div>
 
 <div class="box file">
-<div class="bar bar-bg"><img class="mini-icon" src="images/fileicon.png">Blog<div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="index.html"><div class="button x-button"><b>✖</b></div></a> </div>
+<div class="bar bar-bg"><img class="mini-icon" src="images/fileicon.png"><div class="mini-title">Blog</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="index.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 
 
 <div class="window-box">
 
 <div class="box file">
-<div class="bar"><img class="mini-icon" src="images/paper.png">Hello, world!<div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="blog.html"><div class="button x-button"><b>✖</b></div></a> </div>
+<div class="bar"><img class="mini-icon" src="images/paper.png"><div class="mini-title">Hello, world!</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="blog.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 <div class="blogbox scrollbox">
 <div style="padding:2px">
@@ -254,8 +82,9 @@ Hello, world! This is my first post.
 </div> <!-- end page -->
 
 <div class="footer">
-<div class="footer-button footer-bg" style="width:150px"><img class="mini-icon" src="images/fileicon.png"><b>Blog</b></div>
-<div class="footer-button" style="width:150px"><img class="mini-icon" src="images/paper.png"><b>Hello, world!</b></div>
+<div class="footer-button footer-bg" style="width:150px"><b>Welcome</b></div>
+<div class="footer-button footer-bg" style="width:150px"><img class="mini-icon" src="images/fileicon.png"><div class="mini-title"><b>Blog</b></div></div>
+<div class="footer-button" style="width:150px"><img class="mini-icon" src="images/paper.png"><div class="mini-title"><b>Hello, world!</b></div></div>
 <div style="flex-grow:1"></div>
 <div class="footer-time" style="width:70px"><label id="lblTime"></label></div>
 </div>

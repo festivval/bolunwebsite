@@ -1,0 +1,30 @@
+.welcome {
+    width:500px;
+}
+@media screen and (max-width: 600px) {
+  .welcome {
+    width: 84%;
+  }
+}
+.flex-content {
+    display: flex;
+    justify-content: space-between;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.picture-headshot {
+    background-image: url("../images/headshot.jpg");
+    width: calc(100% - 115px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 0;
+    padding-top: 63.05%;
+}
+.picture-headshot:hover {
+    background-image: url("../images/headshot2.jpg");
+    transition-delay: 3s;
+}

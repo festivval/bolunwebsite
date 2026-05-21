@@ -1,0 +1,45 @@
+.credits {
+    width:500px;
+}
+@media screen and (max-width: 600px) {
+  .credits {
+    width: 84%;
+  }
+}
+.flex-content-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-color: black white white black;
+    border-style: inset;
+    height: calc(100% - 5px);
+    margin: 2px;
+}
+.flex-content-row {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.textbox {
+    font-family: 'Consolas', sans-serif;
+    font-weight: bold;
+    flex-grow: 1;
+}
+.scroll-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #e0e3e4;
+}
+.scroll-row {
+    display: flex;
+    background-color: #e0e3e4;
+}
+.scroll-button {
+    font-size:10px;
+    color: #87888f;
+    padding: 0px;
+    margin: 1px;
+    width: 17px;
+}

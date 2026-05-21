@@ -1,155 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="styles/main.css">
-<style>
-a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
-    text-decoration: none;
-    color: inherit;
-}
-.page {
-    display: flex;
-    flex-wrap: wrap;
-}
-p { font-size: 18px; }
-ul {
-    position: relative;
-    list-style: none;
-    margin-left: 0;
-    padding-left: 1.2em;
-}
-ul li {
-    padding: 5px 0px;
-}
-ul li:before {
-    content: "▣";
-    position: absolute;
-    left: 0;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.about-box::-webkit-scrollbar {
-    background-color: #e0e3e4;
-    width:22px;
-}
-.about-box::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-}
-.about-box::-webkit-scrollbar-button:single-button:vertical:decrement {
-    background-image: url('images/uparrow.png');
-    background-size: 8px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-}
-.about-box::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-    border-style: solid;
-    border-color: #9b9ea3;
-}
-.about-box::-webkit-scrollbar-button:single-button:vertical:increment {
-    background-image: url('images/downarrow.png');
-    background-size: 8px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
-    border-style: outset;
-    border-color: white black black white;
-}
-.about-box::-webkit-scrollbar-button:single-button:vertical:increment:active {
-    border-style: solid;
-    border-color: #9b9ea3;
-}
-.welcome {
-    width:500px;
-}
-.about {
-    flex: 1;
-}
-.about-box {
-    min-width: 300px;
-    max-height: 70vh;
-    overflow: auto;
-    border-style: solid;
-    border-color: black white white black;
-    margin: 5px;
-}
-@media screen and (max-width: 864px) {
-  .welcome {
-      width: 500px;
-      max-width: 94vw;
-  }
-  .about {
-      margin-bottom: 70px;
-  }
-  .about-box {
-      max-height: 100%;
-  }
-}
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/welcome.css">
+    <link rel="stylesheet" type="text/css" href="styles/about.css">
 
-.flex-content {
-    display: flex;
-    justify-content: space-between;
-}
-.picture {
-    background-color: #ffffbc;
-    border-style: inset;
-    border-color: eeeeee;
-}
-.picture-headshot {
-    background-image: url("images/headshot.jpg");
-    width: calc(100% - 115px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 0;
-    padding-top: 63.05%;
-}
-.picture-headshot:hover {
-    background-image: url("images/headshot2.jpg");
-    transition-delay:3s;
-}
-.socials {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.logo {
-    display: flex;
-    gap: 15px;
-}
-.logo-img {
-    display: block;
-    max-height: 50px;
-}
-.box-footer {
-    display: flex;
-    font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
-    padding: 1px;
-    margin: 2px;
-}
-.box-toe {
-    display: flex;
-    flex-grow: 1;
-    border-style: inset;
-    border-color: white;
-}
-
-.mini-icon {
-    image-rendering: pixelated;
-    object-fit: cover;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-</style>
-<script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
-<script type="text/javascript" src="scripts/clock.js"></script>
-<script type="text/javascript" src="scripts/keybind.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-4.0.0.slim.min.js"></script>
+    <script type="text/javascript" src="scripts/clock.js"></script>
+    <script type="text/javascript" src="scripts/keybind.js"></script>
 </head>
 <body>
 
@@ -183,9 +43,9 @@ ul li:before {
 </div>
 
 <div class="box about">
-<div class="bar"><img class="mini-icon" src="images/abouticon.png">About<div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="index.html"><div class="button x-button"><b>✖</b></div></a> </div>
+<div class="bar"><img class="mini-icon" src="images/abouticon.png"><div class="mini-title">About</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="index.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
-<div class="box-content about-box">
+<div class="box-content about-box scrollbox">
 <h1><b>About Me</b></h1>
 <p>I’m a computer science undergraduate at UCLA. I’m learning <i>systems</i> and <i>programming languages</i> techniques so I can create tools that eliminate bugs and improve performance in everyday software. I’m currently working with Prof. Konstantinos Kallas and PaSh to make dynamic languages fast — shell and python.</p>
 <p>Feel free to get in touch at my email: me [at] bolun [dot] dev!</p><br>
@@ -224,15 +84,16 @@ ul li:before {
     Research Assistant • Nov 2024 - Present<br>
     Advisor: <a href="https://angelhof.github.io/">Konstantinos Kallas</a></p>
 </div>
-</div> <!-- end box content -->
+</div> <!-- end box-content about-box -->
 
-<div class="box-footer"><div class="box-toe" style="flex-grow:3"></div><div class="box-toe" style="flex-grow:3"></div><div class="box-toe" style="flex-grow:1"><img class="mini-icon" src="images/abouticon.png">A. Bolun Thompson</div></div>
+<div class="box-footer"><div class="box-toe" style="flex-grow:3"></div><div class="box-toe" style="flex-grow:3"></div><div class="box-toe" style="flex-grow:1"><img class="mini-icon" src="images/abouticon.png"><div class="mini-title">A. Bolun Thompson</div></div></div>
 </div> <!-- end box about -->
 
 </div> <!-- end page -->
 
 <div class="footer">
-<div class="footer-button" style="width:150px"><img class="mini-icon" src="images/abouticon.png"><b>About</b></div>
+<div class="footer-button footer-bg" style="width:150px"><b>Welcome</b></div>
+<div class="footer-button" style="width:150px"><img class="mini-icon" src="images/abouticon.png"><div class="mini-title"><b>About</b></div></div>
 <div style="flex-grow:1"></div>
 <div class="footer-time" style="width:70px"><label id="lblTime"></label></div>
 </div>
