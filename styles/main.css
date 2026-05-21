@@ -120,17 +120,23 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
 .box-header {
     display: flex;
     font-family: 'Calibri', sans-serif;
-    border-style: none none solid none;
-    border-color: black;
     background-color: #c0c0c0;
 }
 .box-ear {
-    display: flex;
-    border-style: none solid none none;
-    border-color: black;
+    border-style: outset;
+    border-color: white black black white;
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+.box-ear-select:active {
+    border-style: solid;
+    border-color: black white white black;
+}
+.box-ear-select:active > .select-inner {
+    border-style: dotted;
 }
 .box-ear-bg {
     color: #95979d;
