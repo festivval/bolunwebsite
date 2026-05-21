@@ -179,6 +179,11 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
     border-style: outset;
     border-color: white black black white;
 }
+.footer-bg:active {
+    background-color: #dee2e3;
+    border-style: inset;
+    border-color: black white white black;
+}
 .footer-time {
     font-family: 'Calibri', sans-serif;
     background-color: #c0c0c0;
