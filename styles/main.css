@@ -1,6 +1,6 @@
 body {
-    background-color:#008080ff;
-    margin:0;
+    background-color: var(--color-background);
+    margin: 0;
 }
 ul {
     position: relative;
@@ -23,9 +23,9 @@ ul li:before {
 }
 .box {
     font-family: 'Times New Roman', serif;
-    background-color: #c0c0c0;
+    background-color: var(--color-box);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
     padding-right: 1px;
     margin: 10px;
 }
@@ -35,14 +35,14 @@ ul li:before {
 .bar {
     display: flex;
     font-family: 'Calibri', sans-serif;
-    color: white;
-    background-color: #0000a8;
+    color: var(--color-text-bar);
+    background-color: var(--color-bar);
     padding: 1px;
     overflow: hidden;
 }
 .bar-bg {
-    color: #c0c0c0;
-    background-color: #87888f;
+    color: var(--color-text-bar-inactive);
+    background-color: var(--color-bar-inactive);
 }
 .mini-icon {
     position: absolute;
@@ -66,10 +66,10 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
 }
 .button {
     font-family: 'Calibri', sans-serif;
-    color: black;
-    background-color: #c0c0c0ff;
+    color: var(--color-text-button);
+    background-color: var(--color-button);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
     padding: 1px;
     text-align: center;
     position: relative;
@@ -82,18 +82,19 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
 }
 .button:active {
     border-style: inset;
-    border-color: black white white black;
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
 }
 .select:active {
     border-style: solid;
-    border-color: black;
+    border-color: var(--color-shadow);
 }
 .selected {
-    border-color: black;
+    border-color: var(--color-shadow);
 }
 .select-inner {
     border-style: none;
     border-radius: 2.5px;
+    border-color: var(--color-outline);
     position: absolute;
     top: 2.5px;
     bottom: 2.5px;
@@ -106,6 +107,7 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
 .selected-inner {
     border-style: dotted;
     border-radius: 2.5px;
+    border-color: var(--color-outline);
     position: absolute;
     top: 2.5px;
     bottom: 2.5px;
@@ -113,18 +115,19 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
     right: 2.5px;
 }
 .picture {
-    background-color: #ffffbc;
+    background-color: var(--color-picture);
     border-style: inset;
-    border-color: #eeeeee;
+    border-color: var(--color-highlight-soft);
 }
 .box-header {
     display: flex;
     font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
+    color: var(--color-text-header);
+    background-color: var(--color-header);
 }
 .box-ear {
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
     padding-left: 10px;
     padding-right: 10px;
     overflow: hidden;
@@ -133,18 +136,19 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
 }
 .box-ear-select:active {
     border-style: solid;
-    border-color: black white white black;
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
 }
 .box-ear-select:active > .select-inner {
     border-style: dotted;
 }
 .box-ear-bg {
-    color: #95979d;
+    color: var(--color-text-header-inactive);
 }
 .box-footer {
     display: flex;
     font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
+    color: var(--color-text-boxfooter);
+    background-color: var(--color-boxfooter);
     padding: 1px;
     margin: 2px;
 }
@@ -152,15 +156,16 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
     display: flex;
     flex-grow: 1;
     border-style: inset;
-    border-color: white;
+    border-color: var(--color-highlight);
     overflow: hidden;
 }
 .footer {
     position: fixed;
     font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
+    color: var(--color-text-button);
+    background-color: var(--color-footer);
     border-style: outset outset none none;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
     bottom: 0px;
     width: 100%;
     display: flex;
@@ -168,90 +173,90 @@ a.link-button, a.link-button:hover, a.link-button:focus, a.link-button:active {
 }
 .footer-button {
     font-family: 'Calibri', sans-serif;
-    background-color: #dee2e3;
+    background-color: var(--color-button-active);
     border-style: inset;
-    border-color: black white white black;
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
     padding: 1px;
     margin: 2px;
 }
 .footer-bg {
-    background-color: #c0c0c0;
+    background-color: var(--color-footer);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
 }
 .footer-bg:active {
-    background-color: #dee2e3;
+    background-color: var(--color-button-active);
     border-style: inset;
-    border-color: black white white black;
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
 }
 .footer-time {
     font-family: 'Calibri', sans-serif;
-    background-color: #c0c0c0;
+    background-color: var(--color-footer);
     border-style: inset;
-    border-color: #eeeeee;
+    border-color: var(--color-highlight-soft);
     padding: 1px;
     margin: 2px;
     text-align: center;
 }
 
 .scrollbox::-webkit-scrollbar {
-    background-color: #e0e3e4;
+    background-color: var(--color-scrollbar);
     width: 22px;
 }
 .scrollbox::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0ff;
+    background-color: var(--color-scrollbar-thumb);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:vertical:decrement {
     background-image: url('../images/uparrow.png');
     background-size: 8px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
+    background-color: var(--color-scrollbar-button);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:vertical:decrement:active {
     border-style: solid;
-    border-color: #9b9ea3;
+    border-color: var(--color-scrollbar-button-active);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:vertical:increment {
     background-image: url('../images/downarrow.png');
     background-size: 8px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
+    background-color: var(--color-scrollbar-button);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:vertical:increment:active {
     border-style: solid;
-    border-color: #9b9ea3;
+    border-color: var(--color-scrollbar-button-active);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:horizontal:decrement {
     background-image: url('../images/leftarrow.png');
     background-size: 8px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
+    background-color: var(--color-scrollbar-button);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
     border-style: solid;
-    border-color: #9b9ea3;
+    border-color: var(--color-scrollbar-button-active);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:horizontal:increment {
     background-image: url('../images/rightarrow.png');
     background-size: 8px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color: #c0c0c0ff;
+    background-color: var(--color-scrollbar-button);
     border-style: outset;
-    border-color: white black black white;
+    border-color: var(--color-highlight) var(--color-shadow) var(--color-shadow) var(--color-highlight);
 }
 .scrollbox::-webkit-scrollbar-button:single-button:horizontal:increment:active {
     border-style: solid;
-    border-color: #9b9ea3;
+    border-color: var(--color-scrollbar-button-active);
 }

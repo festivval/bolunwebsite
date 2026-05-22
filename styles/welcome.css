@@ -1,6 +1,12 @@
 .welcome {
     width: 500px;
 }
+.welcome-text {
+    color: var(--color-text);   
+}
+.welcome-dev {
+    color: var(--color-text-accent);
+}
 .flex-content {
     display: flex;
     justify-content: space-between;
@@ -8,10 +14,9 @@
 .socials {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
-.picture-headshot {
-    background-image: url("../images/headshot.jpg");
+#headshot {
     width: calc(100% - 115px);
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,13 +24,28 @@
     height: 0;
     padding-top: 63.05%;
 }
-.picture-headshot:hover {
-    background-image: url("../images/headshot2.jpg");
+#headshot:hover {
     transition-delay: 3s;
+}
+#colors-toggle-icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 20px;
+    height: 20px;
 }
 
 @media screen and (max-width: 865px) {
   .welcome {
     width: 84vw;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .picture-headshot {
+    background-image: url("../images/headshot-night.jpg");
+  }
+  .picture-headshot:hover {
+    background-image: url("../images/headshot2-night.jpg");
+    transition-delay: 3s;
   }
 }

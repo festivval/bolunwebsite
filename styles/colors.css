@@ -1,0 +1,96 @@
+:root {
+    --color-background: #008080;
+    --color-box: #c0c0c0;
+    --color-filebox: white;
+    --color-blogbox: #ffffd0;
+    --color-textbox: white;
+    --color-highlight: #ffffff;
+    --color-highlight-soft: #eeeeee;
+    --color-shadow: black;
+    --color-text: black;
+    --color-text-bar: white;
+    --color-text-bar-inactive: #c0c0c0;
+    --color-text-accent: white;
+    --color-text-button: black;
+    --color-text-header: black;
+    --color-text-header-inactive: #95979d;
+    --color-text-boxfooter: black;
+    --color-text-icon: black;
+    --color-text-icon-alt: white;
+    --color-bar: #0000a8;
+    --color-bar-inactive: #87888f;
+    --color-button: #c0c0c0;
+    --color-button-active: #dee2e3;
+    --color-picture: #ffffbc;
+    --color-header: #c0c0c0;
+    --color-boxfooter: #c0c0c0;
+    --color-footer: #c0c0c0;
+    --color-scrollbar: #e0e3e4;
+    --color-scrollbar-thumb: #c0c0c0;
+    --color-scrollbar-button: #c0c0c0;
+    --color-scrollbar-button-active: #9b9ea3;
+    --color-scrollbar-button-inactive: #87888f;
+    --color-outline: black;
+    --color-outline-alt: white;
+    #colors-toggle-icon {
+        background-image: url("../images/sun.svg");
+    }
+    #headshot {
+        background-image: url("../images/headshot.jpg");
+    }
+    #headshot:hover {
+        background-image: url("../images/headshot2.jpg");
+    }
+}
+
+[data-theme="dark"] {
+    --color-background: #252042;
+    --color-box: #404040;
+    --color-filebox: #0e0e0f;
+    --color-blogbox: #2e2e26;
+    --color-textbox: black;
+    --color-highlight: #808080;
+    --color-highlight-soft: #eeeeee;
+    --color-shadow: black;
+    --color-text: #e0e0e0;
+    --color-text-bar: #e0e0e0;
+    --color-text-bar-inactive: #bfbfbf;
+    --color-text-accent: #8282d9;
+    --color-text-button: #e0e0e0;
+    --color-text-header: #e0e0e0;
+    --color-text-header-inactive: #95979d;
+    --color-text-boxfooter: #e0e0e0;
+    --color-text-icon: #e0e0e0;
+    --color-text-icon-alt: #e0e0e0;
+    --color-text-blogbox: #e0e0e0;
+    --color-bar: #0f0f5e;
+    --color-bar-inactive: #1f1f26;
+    --color-button: #404040;
+    --color-button-active: #616363;
+    --color-picture: #ffffbc;
+    --color-header: #404040;
+    --color-boxfooter: #404040;
+    --color-footer: #404040;
+    --color-scrollbar: #616363;
+    --color-scrollbar-thumb: #404040;
+    --color-scrollbar-button: #404040;
+    --color-scrollbar-button-active: #9b9ea3;
+    --color-scrollbar-button-inactive: #87888f;
+    --color-outline: #e0e0e0;
+    --color-outline-alt: black;
+    a {
+        color: var(--color-text-accent);
+    }
+    .svg-filter {
+        filter: invert(100%) sepia(1%) saturate(3138%) hue-rotate(188deg) brightness(111%) contrast(76%);
+    }
+    #colors-toggle-icon {
+        background-image: url("../images/moon.svg");
+    }
+    #headshot {
+        background-image: url("../images/headshot-night.jpg");
+    }
+    #headshot:hover {
+        background-image: url("../images/headshot2-night.jpg");
+    }
+}

@@ -5,6 +5,7 @@
     <link rel="icon" type="image/png" href="images/bosniper.png"/>
     <title>Blog: Hello, world! - bolun.dev</title>
 
+    <link rel="stylesheet" type="text/css" href="styles/colors.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/welcome.css">
     <link rel="stylesheet" type="text/css" href="styles/files.css">
@@ -29,11 +30,11 @@
 <div class="bar bar-bg">Welcome <div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="empty.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 <div class="box-content">
-<b><span style="font-size:30px">Welcome to <span style="font-family:'Arial Black'; font-size:27px">bolun</span><span style="color: white">.dev</span></span></b>
+<b><span class="welcome-text" style="font-size:30px">Welcome to <span style="font-family:'Arial Black'; font-size:27px">bolun</span><span class="welcome-dev">.dev</span></span></b>
 
 <div class="flex-content" style="margin-top:10px">
 
-<div class="picture picture-headshot"></div>
+<div id="headshot" class="picture"></div>
 
 <div class="buttons" style="width:100px">
 <a class="link-button" href="about.html"><div class="button select"><div class="select-inner"></div><u>A</u>bout</div></a>
@@ -41,8 +42,9 @@
 <a class="link-button" href="misc.html"><div class="button select"><div class="select-inner"></div><u>M</u>isc.</div></a>
 <div style="flex-grow:1"></div>
 <div class="socials">
-<a class="link-button" href="https://github.com/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img style="height:100%"; src="images/github.svg"></div></a>
-<a class="link-button" href="https://linkedin.com/in/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img style="height:100%"; src="images/linkedin.svg"></div></a>
+<a class="link-button" href="https://github.com/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img class="svg-filter" style="height:100%" src="images/github.svg"></div></a>
+<a class="link-button" href="https://linkedin.com/in/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img class="svg-filter" style="height:100%" src="images/linkedin.svg"></div></a>
+<div id="colors-toggle" class="button select"><div id="colors-toggle-icon" class="svg-filter"></div></div>
 </div> <!-- end socials -->
 </div> <!-- end buttons -->
 

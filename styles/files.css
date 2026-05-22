@@ -3,8 +3,8 @@
 }
 .filebox {
     flex-grow: 1;
-    background-color: white;
-    border-color: black white white black;
+    background-color: var(--color-filebox);
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
     border-style: inset;
     padding-left: 30px;
     padding-right: 30px;
@@ -18,9 +18,10 @@
     z-index: 50;
 }
 .blogbox {
-    background-color: #ffffd0;
+    color: var(--color-text-blogbox);
+    background-color: var(--color-blogbox);
     font-family: 'Calibri', sans-serif;
-    border-color: black white white black;
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
     border-style: inset;
     padding: 0px;
     margin: 5px;
@@ -32,7 +33,7 @@
     flex-wrap: wrap;
     gap: 20px;
     font-family: 'Calibri', sans-serif;
-    color: black;
+    color: var(--color-text-icon);
 }
 .icon {
     text-align: center;
@@ -55,9 +56,9 @@
     opacity: 1;
 }
 .icon:active > .icon-txt {
-    background-color: #0000a8;
-    color: white;
-    outline: dotted black;
+    background-color: var(--color-bar);
+    color: var(--color-text-bar);
+    outline: dotted var(--color-outline);
 }
 
 @media screen and (max-width: 865px) {

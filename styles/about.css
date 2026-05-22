@@ -6,11 +6,12 @@ p {
     flex: 1;
 }
 .about-box {
+    color: var(--color-text);
     min-width: 300px;
     max-height: 70vh;
     overflow: auto;
     border-style: solid;
-    border-color: black white white black;
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
     margin: 5px;
 }
 .logo {

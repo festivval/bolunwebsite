@@ -5,8 +5,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
-    border-color: black white white black;
+    color: var(--color-text);
+    background-color: var(--color-textbox);
+    border-color: var(--color-shadow) var(--color-highlight) var(--color-highlight) var(--color-shadow);
     border-style: inset;
     height: calc(100% - 5px);
     margin: 2px;
@@ -25,15 +26,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #e0e3e4;
+    background-color: var(--color-scrollbar);
 }
 .scroll-row {
     display: flex;
-    background-color: #e0e3e4;
+    background-color: var(--color-scrollbar);
+}
+.scroll-corner {
+    width: 21px;
+    background-color: var(--color-scrollbar);
+    color: var(--color-scrollbar-thumb);
+    text-align: right;
 }
 .scroll-button {
     font-size:10px;
-    color: #87888f;
+    color: var(--color-scrollbar-button-inactive);
     padding: 0px;
     margin: 1px;
     width: 17px;
