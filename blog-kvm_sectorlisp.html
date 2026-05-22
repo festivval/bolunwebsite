@@ -27,7 +27,7 @@
 <div class="page">
 
 <div>
-<div class="box welcome">
+<article class="box welcome">
 <div class="bar bar-bg">Welcome <div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="empty.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 <div class="box-content">
@@ -35,9 +35,9 @@
 
 <div class="flex-content" style="margin-top:10px">
 
-<div id="headshot" class="picture"></div>
+<span id="headshot" class="picture" role="img" aria-label="Headshot of Bolun Thompson"></span>
 
-<div class="buttons" style="width:100px">
+<nav class="buttons" style="width:100px">
 <a class="link-button" href="about.html"><div class="button select"><div class="select-inner"></div><u>A</u>bout</div></a>
 <a class="link-button" href="blog.html"><div class="button select"><div class="select-inner"></div><u>B</u>log</div></a>
 <a class="link-button" href="misc.html"><div class="button select"><div class="select-inner"></div><u>M</u>isc.</div></a>
@@ -45,24 +45,24 @@
 <div class="socials">
 <a class="link-button" href="https://github.com/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img class="svg-filter" style="height:100%" src="images/github.svg" alt="Github"></div></a>
 <a class="link-button" href="https://linkedin.com/in/bolunthompson" target="_blank" rel="noopener noreferrer" style="font-size:0"><div class="button select"><img class="svg-filter" style="height:100%" src="images/linkedin.svg" alt="LinkedIn"></div></a>
-<div id="colors-toggle" class="button select"><div id="colors-toggle-icon" class="svg-filter"></div></div>
+<div id="colors-toggle" class="button select"><div id="colors-toggle-icon" class="svg-filter"><span role="img" aria-label="toggle dark/light mode"></span></div></div>
 </div> <!-- end socials -->
-</div> <!-- end buttons -->
+</nav> <!-- end buttons -->
 
 </div> <!-- end flex-content -->
 </div> <!-- end box-content -->
-</div> <!-- end box -->
+</article> <!-- end box -->
 </div>
 
-<div class="box file">
+<article class="box file">
 <div class="bar bar-bg"><img class="mini-icon" src="images/fileicon.png" alt=""><div class="mini-title">Blog</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="index.html"><div class="button x-button"><b>✖</b></div></a> </div>
 
 
 
 <div class="window-box">
 
-<div class="box file">
-<div class="bar"><img class="mini-icon" src="images/paper.png" alt=""><div class="mini-title">KVM Sectorlisp</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="blog.html"><div class="button x-button"><b>✖</b></div></a> </div>
+<article class="box">
+<header class="bar"><img class="mini-icon" src="images/paper.png" alt=""><div class="mini-title">KVM Sectorlisp</div><div style="flex-grow:1"></div><a class="link-button" style="margin-right:2px;" href="blog.html"><div class="button x-button"><b>✖</b></div></a> </header>
 
 <div class="blogbox scrollbox">
 <div class="box-header">
@@ -88,7 +88,7 @@ links:<br>
 </div> <!-- end blogbox -->
 
 <div class="box-footer"><div class="box-toe">Sep 24, 2024</div><div class="box-toe"><div style="flex-grow:1"></div><span style="color:#87888f">///</span></div></div>
-</div> <!-- end box -->
+</article> <!-- end box -->
 
 </div> <!-- end window-box -->
 
@@ -104,17 +104,17 @@ links:<br>
 </div> <!-- end icons -->
 </div> <!-- end filebox -->
 <div class="box-footer"><div class="box-toe">2 object(s)</div><div class="box-toe">2KB<div style="flex-grow:1"></div><span style="color:#87888f">///</span></div></div>
-</div> <!-- end box -->
+</article> <!-- end box -->
 
 </div> <!-- end page -->
 
-<div class="footer">
+<footer class="footer">
 <a class="link-button" href="index.html"><div class="footer-button footer-bg" style="width:150px"><b>Welcome</b></div></a>
 <a class="link-button" href="blog.html"><div class="footer-button footer-bg" style="width:150px"><img class="mini-icon" src="images/fileicon.png" alt=""><div class="mini-title"><b>Blog</b></div></div></a>
 <div class="footer-button" style="width:150px"><img class="mini-icon" src="images/paper.png"><div class="mini-title"><b>KVM Sectorlisp</b></div></div>
 <div style="flex-grow:1"></div>
 <div class="footer-time" style="width:70px"><label id="lblTime"></label></div>
-</div>
+</footer>
 
 </body>
 </html>
