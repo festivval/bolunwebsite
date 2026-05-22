@@ -3,20 +3,21 @@ const prefersDarkColorScheme = () =>
   window.matchMedia &&
   window.matchMedia('(prefers-color-scheme: dark)').matches;
 
+if (localStorage.getItem("theme") === "light") {
+    document.documentElement.setAttribute('data-theme', 'light');
+} else if (localStorage.getItem("theme") === "dark") {
+    document.documentElement.setAttribute('data-theme', 'dark');
+} else {
+    const target = prefersDarkColorScheme ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', target);
+    localStorage.setItem("theme", target);
+}
+
 $(document).ready(load);
 
 //setup listener for changing themes
 function load() {
     const toggleSwitch = document.getElementById("colors-toggle");
-    if (localStorage.getItem("theme") === "light") {
-        document.documentElement.setAttribute('data-theme', 'light');
-    } else if (localStorage.getItem("theme") === "dark") {
-        document.documentElement.setAttribute('data-theme', 'dark');
-    } else {
-        const target = prefersDarkColorScheme ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', target);
-        localStorage.setItem("theme", target);
-    }
     toggleSwitch.addEventListener('click', switchTheme);
 }
 
