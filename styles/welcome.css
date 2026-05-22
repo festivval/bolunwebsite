@@ -40,12 +40,3 @@
     width: 84vw;
   }
 }
-@media (prefers-color-scheme: dark) {
-  .picture-headshot {
-    background-image: url("../images/headshot-night.jpg");
-  }
-  .picture-headshot:hover {
-    background-image: url("../images/headshot2-night.jpg");
-    transition-delay: 3s;
-  }
-}

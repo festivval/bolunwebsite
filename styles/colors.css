@@ -63,7 +63,7 @@
     --color-text-icon: #e0e0e0;
     --color-text-icon-alt: #e0e0e0;
     --color-text-blogbox: #e0e0e0;
-    --color-bar: #0f0f5e;
+    --color-bar: #000080;
     --color-bar-inactive: #1f1f26;
     --color-button: #404040;
     --color-button-active: #616363;
@@ -80,6 +80,9 @@
     --color-outline-alt: black;
     a {
         color: var(--color-text-accent);
+    }
+    img {
+        filter: contrast(75%);
     }
     .svg-filter {
         filter: invert(100%) sepia(1%) saturate(3138%) hue-rotate(188deg) brightness(111%) contrast(76%);
