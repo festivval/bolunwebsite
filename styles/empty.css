@@ -26,5 +26,5 @@
 }
 .icon:active > .icon-txt {
     background-color: var(--color-bar);
-    outline: dotted var(--color-outline-alt);
+    outline: dotted var(--color-outline);
 }
